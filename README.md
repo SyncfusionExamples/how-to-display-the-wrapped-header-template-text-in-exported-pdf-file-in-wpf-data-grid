@@ -4,7 +4,7 @@ How to display the wrapped HeaderTemplate text in exported PDF file in WPF DataG
 
 # About the sample
 
-In SfDataGrid, you can wrap the header in exported PDF document by setting WordWrap property in PdfStringFormat class and apply the format to the PdfPageTemplateElement using PdfHeaderFooterEventHandler.
+In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid), you can wrap the header in exported PDF document by setting WordWrap property in PdfStringFormat class and apply the format to the PdfPageTemplateElement using PdfHeaderFooterEventHandler.
 
 ```c#
 private void Export_Click(object sender, RoutedEventArgs e)
