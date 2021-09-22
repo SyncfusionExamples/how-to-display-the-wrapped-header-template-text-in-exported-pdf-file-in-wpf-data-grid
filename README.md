@@ -30,5 +30,8 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
     e.PdfDocumentTemplate.Top = header;
 }
 ```
+
+KB article - [How to display the wrapped HeaderTemplate text in exported PDF file in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12045/how-to-display-the-wrapped-headertemplate-text-in-exported-pdf-file-in-wpf-datagrid)
+
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
