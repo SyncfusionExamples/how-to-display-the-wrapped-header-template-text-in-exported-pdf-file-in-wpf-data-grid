@@ -1,11 +1,10 @@
-# How to display the wrapped HeaderTemplate text in exported PDF file in WPF DataGrid (SfDataGrid) ?
+# How to Display the Wrapped HeaderTemplate Text in Exported PDF File in WPF DataGrid?
 
-How to display the wrapped HeaderTemplate text in exported PDF file in WPF DataGrid (SfDataGrid) ?
+This sample illustrates how to display the wrapped HeaderTemplate text in exported PDF file in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 
-# About the sample
+In `DataGrid`, you can wrap the header in exported PDF document by setting [WordWrap](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_WordWrap) property in [PdfStringFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfPageTemplateElement](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageTemplateElement.html) using [PdfHeaderFooterEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfHeaderFooterEventHandler.html).
 
-In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid), you can wrap the header in exported PDF document by setting WordWrap property in PdfStringFormat class and apply the format to the PdfPageTemplateElement using PdfHeaderFooterEventHandler.
-
+#### C#
 ```c#
 private void Export_Click(object sender, RoutedEventArgs e)
 {
@@ -13,7 +12,8 @@ private void Export_Click(object sender, RoutedEventArgs e)
     options.PageHeaderFooterEventHandler = PdfHeaderFooterEventHandler;
     var document = dataGrid.ExportToPdf(options);
     document.Save("Sample.pdf");
-}        
+}
+
 static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs e)
 {
     var document = new PdfDocument();
@@ -31,7 +31,7 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
 }
 ```
 
-KB article - [How to display the wrapped HeaderTemplate text in exported PDF file in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12045/how-to-display-the-wrapped-headertemplate-text-in-exported-pdf-file-in-wpf-datagrid)
+![Displaying wrapped HeaderTemplate text in exported PDF file](WrappedHeaderInExportedDataGrid.png)
 
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
